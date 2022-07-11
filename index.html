@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Website Template Design in HTML & CSS</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+     <div class="navbar">
+         <div class="logo">
+             <a href="#"><img src="Template-2.jpg"></a>
+         </div>
+         <div class="menu">
+             <ul>
+                 <li id="nav">Home</li>
+                 <li id="nav">Project</li>
+                 <li id="nav">Pages</li>
+                 <li id="nav">Elements</li>
+                 <li id="nav">Blog</li>
+                 <li id="nav">Shop</li>
+                 <li id="nav">Contact</li>
+             </ul>
+    </div>
+         <div class="login-btn" ><ul><li id="buy">Buy Rogan 
+<span>&#8594;</span></li></ul> </div>
+     </div>   
+    
+</div>
+    <div class="banner">
+        <div class="app-text">
+           <button type="button">70% Off for first 3 months</button>
+            <h1>Digital Agency<br>with Excellence<br>Services.</h1>
+           <p>The 3 golden rules professional graphic designer don't</p>
+        </div>
+        <div class="app-picture">
+            <img src="Template-1.jpg">
+        </div>
+    </div>
+     
+     <div class="footer">
+        <h2 id="n">[Student Name]</h2>
+        <h2 id="roll">[University Roll No]</h2>
+        <h2 id="uni">Gla University,Mathura</h2>
+        <h2 id="date"></h2>
+    </div>
+
+    <script>
+        var n = document.getElementById("n");
+        var roll = document.getElementById("roll");
+        var date = document.getElementById("date");
+
+        n.innerHTML = "Aryan Gupta";
+        roll.innerHTML = "201500151";
+
+        var day = new Date();
+        var d = day.getDate();
+        var month = day.getMonth();
+        var year = day.getFullYear();
+
+        date.innerHTML = `${d}-${month}-${year}`;
+   
+    </script>
+
+    
+</body>
+</html>
